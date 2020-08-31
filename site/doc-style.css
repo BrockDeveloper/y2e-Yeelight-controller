@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* ------START: STYLE ALL THE PAGE------ */
+
+* {
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: minmax(300px,auto) 1fr;
+    grid-template-areas: "navBar mainContent";
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ------END: STYLE ALL THE PAGE------ */
+
+
+/* ------START STYLE THE NAV SIDEBAR------ */
+
+/* style the nav section */
+nav#nav-section {
+    grid-area: navBar;
+    position: fixed;
+}
+
+/*style the logo in the navbar  */
+nav#nav-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* part of the logo */
+nav#nav-section header {
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    margin: 0px 0px;
+    color: #9cd8ff;
+}
+
+/* style the link to the page section */
+nav#nav-section a {
+    display: block;
+    font-size: x-large;
+    padding: 5px;
+    margin: 10px 30px;
+    color: black;
+}
+
+/* style the hover link */
+nav#nav-section a:hover {
+    color: #9cd8ff;
+}
+
+/* ------END STYLE THE NAV SIDEBAR------ */
+
+
+/* ------START STYLE THE DOCUMENTATION SECTION------ */
+
+/* style the doc section */
+main#main-section {
+    grid-area: mainContent;
+}
+
+/* style the separator */
+main .main-elem hr{
+    border: 3px solid #9cd8ff;
+    border-radius: 5px;
+}
+
+/* style the title of the section */
+main .main-elem header {
+    font-size: xxx-large;
+}
+
+/* style the text */
+main .main-elem p {
+    font-size: x-large;
+    font-weight: 350;
+}
+
+/* style the text inside a list */
+main .main-elem ul {
+    font-size: x-large;
+    font-weight: 350;
+}
+
+/* style the images */
+main .main-elem img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* style the videos */
+main .main-elem video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------END STYLE THE DOCUMENTATION SECTION------ */
