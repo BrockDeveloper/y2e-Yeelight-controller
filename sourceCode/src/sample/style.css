@@ -1,0 +1,158 @@
+/*
+ * Copyright © 2020 Brock Developer (https://brockdeveloper.github.io)
+ *
+ * under creative commons license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+ * creative commons license: Attribution-NonCommercial-ShareAlike
+ *
+ * you are free to consult and modify the code as defined by the cretive commons.
+ * Instead, the name "y2e" is registered by copyrighted.com
+ * (view certificate: https://www.copyrighted.com/work/FUSnH886HnPtZb0s)
+ */
+
+/* TABPANE SECTION */
+
+#tabPane {
+    -fx-tab-min-height: 5em;
+    /* 24 */
+    -fx-tab-max-height: 5em;
+    /* 24 */
+
+    -fx-tab-min-width: 0.5em;
+    -fx-tab-max-width: 0.5em;
+    -fx-padding: 0 -1 -1 0
+}
+.tab .tab-label {
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-text-fill: #9CD8FF;
+    -fx-font-size: 16px;
+}
+
+.tab{
+
+    -fx-background-color: #5B5B5B;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-padding: 0 30 0 30;
+}
+
+.tab:selected
+{
+    -fx-background-color: #5B5B5B;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 5 0 0 0;
+    -fx-border-color: #9CD8FF;
+
+
+
+}
+
+.tab:focused
+{
+  -fx-focus-color: transparent;
+
+
+}
+
+.tab-pane *.tab-header-background
+{
+    -fx-background-color: transparent;
+}
+
+.tab-pane:left *.tab-header-area
+{
+    -fx-background-insets: 0, 0 0 10;
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+
+
+}
+
+.tab:selected .focus-indicator
+{
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* TABPANE SECTION */
+
+/* SLIDER SECTION */
+
+.slider > .track {
+     -fx-background-color: #5B5B5B;
+}
+
+.slider > .thumb {
+     -fx-background-color: #9CD8FF;
+}
+
+.slider > .colored-track {
+     -fx-background-color: #9CD8FF;
+}
+
+.slider > .animated-thumb {
+     -fx-background-color: #9CD8FF;
+}
+
+.slider .slider-value {
+     -fx-fill: #252525;
+     -fx-stroke: #252525;
+     -fx-font-size: 16px;
+}
+/* SLIDER SECTION */
+
+/* BUTTON SECTION */
+.button
+{
+  -fx-background-color: #9CD8FF;
+  -fx-text-fill: #5B5B5B;
+  -fx-background-radius: 30 30 30 30;
+  -fx-font-size: 16;
+}
+
+.button:pressed
+{
+  -fx-background-color: #5B5B5B;
+  -fx-text-fill: #9CD8FF;
+  -fx-background-radius: 30 30 30 30;
+  -fx-font-size: 16;
+}
+/* BUTTON SECTION */
+
+/* TEXTFIELD SECTION */
+
+.text-field
+{
+  -fx-background-color: #9CD8FF;
+  -fx-background-radius: 30 30 30 30;
+  -fx-font-size: 16;
+}
+
+
+/* TEXTFIELD SECTION */
+
+/* COLORPICKER SECTION */
+
+.color-picker
+{
+  -fx-background-color: #9CD8FF;
+  -fx-background-radius: 30 30 30 30;
+}
+
+.color-picker > .label
+{
+  -fx-text-fill: #5B5B5B;
+  -fx-font-size: 16;
+}
+
+/* COLORPICKER SECTION */
+
+/* LABEL SECTION */
+
+.label
+{
+  -fx-font-size: 34;
+  -fx-text-fill: #9CD8FF;
+}
+
+/* LABEL SECTION */

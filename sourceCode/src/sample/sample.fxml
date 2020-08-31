@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<!--Desing by Brock Developer, under creative commons -> Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="652.0" style="-fx-background-color: #252525;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TabPane layoutX="7.0" layoutY="19.0" prefHeight="382.0" prefWidth="441.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Set">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="173.0" layoutY="174.0" mnemonicParsing="false" onAction="#findTheLight" prefHeight="44.0" prefWidth="85.0" text="Set" />
+                                <TextField fx:id="deviceId" layoutX="125.0" layoutY="94.0" prefHeight="48.0" prefWidth="181.0" text="insert IP here..." />
+                          <Hyperlink layoutX="182.0" layoutY="300.0" onAction="#openInstruction" text="need help?" underline="true" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Brightness">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Slider fx:id="brightControl" layoutX="100.0" layoutY="103.0" onMouseReleased="#setBrightness" prefHeight="41.0" prefWidth="246.0" />
+                                <Label fx:id="brightVisualize" layoutX="175.0" layoutY="167.0" prefHeight="48.0" prefWidth="97.0" text="100%" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Color">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <GridPane layoutX="60.0" layoutY="19.0" prefHeight="310.0" prefWidth="357.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="60.8" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="71.19998626708984" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="68.60001220703126" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #faffff;" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #e55800;" GridPane.rowIndex="1" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #fe96e5;" GridPane.rowIndex="2" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #1343d5;" GridPane.rowIndex="3" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #ffe8a4;" GridPane.columnIndex="1" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #f54c49;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #de43b8;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #39c1ff;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #ffe667;" GridPane.columnIndex="2" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #ce2745;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #691cb8;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #9aebdc;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #4ecf4e;" GridPane.rowIndex="4" />
+                                        <Button mnemonicParsing="false" onAction="#setColor" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100 100 100 100; -fx-background-color: #228b22;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Scene">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Button layoutX="40.0" layoutY="46.0" mnemonicParsing="false" onAction="#setScene" prefHeight="74.0" prefWidth="154.0" text="PC">
+                                    <graphic>
+                                        <ImageView fitHeight="70.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/pc.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button layoutX="115.0" layoutY="171.0" mnemonicParsing="false" onAction="#setScene" prefHeight="82.0" prefWidth="176.0" text="RELAX">
+                                    <graphic>
+                                        <ImageView fitHeight="70.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/personal.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button layoutX="217.0" layoutY="46.0" mnemonicParsing="false" onAction="#setScene" prefHeight="82.0" prefWidth="164.0" text="READING">
+                                    <graphic>
+                                        <ImageView fitHeight="70.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@img/book.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <ImageView fitHeight="284.0" fitWidth="200.0" layoutX="438.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/bulb.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="image" fitHeight="284.0" fitWidth="200.0" layoutX="437.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/corona.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="470.0" layoutY="298.0" mnemonicParsing="false" onAction="#turnOnOff" prefHeight="50.0" prefWidth="122.0" text="Power">
+            <graphic>
+                <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/onoff.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>
