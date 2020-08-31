@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="doc-style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav id="nav-section">
+    <img src="doc-sources/logo.png" height="120" width="214">
+    <header>Documentation</header>
+    <br>
+    <a href="#getting-started" class="nav-id">Getting started</a>
+    <a href="#set-connection" class="nav-id">Set connection</a>
+    <a href="#set-power" class="nav-id">Set power</a>
+    <a href="#set-brightness" class="nav-id">Set brightness</a>
+    <a href="#set-color" class="nav-id">Set color</a>
+    <a href="#set-scene" class="nav-id">Set scene</a>
+  </nav>
+
+  <main id="main-section">
+
+    <div class="main-elem" id="getting-started">
+      <header>Getting Started</header>
+      <hr>
+      <p>
+        First of all, select your smart bulb from the official Yeelight app for Android or Apple. If you have never used this app before, check this official guide: <a href="https://www.yeelight.com/faqs/yeelight-app" target="_blank" rel="noopener noreferrer">https://www.yeelight.com/faqs/yeelight-app</a>.
+        <br> Now extend the bottom menu and open the lan control section; toggle it on (on=green).
+        <br> In this way y2e will be able to communicate with your smart bulb! You can also follow this video:
+      </p>
+      <video width="270" height="585" controls>
+        <source src="doc-sources\lan-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+    </div>
+
+    <div class="main-elem" id="set-connection">
+      <header>Set connection</header>
+      <hr>
+      <p>
+        Select your smart bulb from the official Yeelight app, open the menu at the top right and select "Device info": the "ip address" field is what we are looking for.
+        You can also follow this video:
+      </p>
+      <video width="270" height="585" controls>
+        <source src="doc-sources\ip-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Then, enter it in the ip field of y2e and click on "set":
+      </p>
+      <img src="doc-sources/connection.PNG" alt="">
+      <p>
+        Once this is done, the ip will be saved and you will no longer have to do this step. If instead you want to change the ip, you can simply enter the new ip and then click "set".
+      </p>
+      <br>
+    </div>
+
+    <div class="main-elem" id="set-power">
+      <header>Set power</header>
+      <hr>
+      <p>
+        To set the power on or off, use the button power. You can easily check if the smart bulb is on or off by looking at the drawing of the light bulb above the power button.
+      </p>
+      <img src="doc-sources/connection.PNG" alt="">
+      <br>
+    </div>
+
+    <div class="main-elem" id="set-brightness">
+      <header>Set brightness</header>
+      <hr>
+      <p>
+        Set the brightness of the smart bulb with the simple slider in the Brightness tab.
+      </p>
+      <img src="doc-sources/brightness.PNG" alt="">
+      <br>
+    </div>
+
+    <div class="main-elem" id="set-color">
+      <header>Set color</header>
+      <hr>
+      <p>
+        Set the color by clicking on the color that you want in the color tab: there are all the main Yeelight colors.
+      </p>
+      <img src="doc-sources/color.PNG" alt="">
+      <br>
+    </div>
+
+    <div class="main-elem" id="set-scene">
+      <header>Set scene</header>
+      <hr>
+      <p>
+        In the scene tab, there are three configurations that you can use quickly and easily:
+      </p>
+      <ul>
+        <li>Pc: a soft blue light </li>
+        <li>Reading: the sun light, in your room</li>
+        <li>Relax: just the color of a warm candle</li>
+      </ul>
+      <img src="doc-sources/scene.PNG" alt="">
+      <br> 
+    </div>
+  </main>
+
+</body>
+</html>
