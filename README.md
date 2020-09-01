@@ -1,10 +1,10 @@
 # y2e - Yeelight controller
 Control your Xiaomi/Yeelight smartbulb from your pc
 
-# DOWNLOAD only the installation file
+## DOWNLOAD section
 To download only the installation file from this repository, follow this link:
 
-# What you can do?
+## What you can do?
 * Turn the device on and off
 * Change the brightness
 * Choose from the available colors
