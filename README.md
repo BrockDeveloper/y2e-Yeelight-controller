@@ -25,4 +25,5 @@ In the source code folder, you can find the source files and a list of the libra
 * BrockUtility.jar included and owned by me
 * JavaFX that provide the gui, download link: https://openjfx.io/
 * YAPI yeelight api by @florian-mollin, download link: https://github.com/florian-mollin/yapi
+
 The project is developed in java language in the intellij IDEA community development environment: https://www.jetbrains.com/idea/
