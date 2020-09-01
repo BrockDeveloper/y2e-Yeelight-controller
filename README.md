@@ -2,7 +2,7 @@
 Control your Xiaomi/Yeelight smartbulb from your pc
 
 ## DOWNLOAD section
-To download only the installation file from this repository, follow this link:
+To download only the installation file, follow this link:
 
 ## What you can do?
 * Turn the device on and off
@@ -18,3 +18,11 @@ https://brockdeveloper.github.io/y2e-Yeelight-controller/doc.html
 my work is *free*, however if you want to *support* my projects, and especially if you like them, you can *contribute* by making a small *donation* whit this button:
 
 <a href="https://www.buymeacoffee.com/brockdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
+
+## DEVELOPERS section
+In the source code folder, you can find the source files and a list of the libraries that I used in this project:
+* BrockUtility.jar included and owned by me
+* JavaFX that provide the gui, download link: https://openjfx.io/
+* YAPI yeelight api by @florian-mollin, download link: https://github.com/florian-mollin/yapi
+The project is developed in java language in the intellij IDEA community development environment: https://www.jetbrains.com/idea/
