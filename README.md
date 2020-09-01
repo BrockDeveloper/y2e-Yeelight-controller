@@ -10,7 +10,7 @@ To download only the installation file from this repository, follow this link:
 * Choose from the available colors
 * Choose a scene already made for you
 
-## TODO after installation
+## IMPORTANT TODO after installation
 *Please*, read the "getting started" and the "set connection" section of the official *documentation* to avoid *error* during the use:
 https://brockdeveloper.github.io/y2e-Yeelight-controller/doc.html
 
