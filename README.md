@@ -9,6 +9,7 @@ To download only the installation file from this repository, follow this link:
 * Change the brightness
 * Choose from the available colors
 * Choose a scene already made for you
+
 More information and the complete documentation at https://brockdeveloper.github.io/y2e-Yeelight-controller/
 
 
