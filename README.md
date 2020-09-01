@@ -15,5 +15,6 @@ To download only the installation file from this repository, follow this link:
 https://brockdeveloper.github.io/y2e-Yeelight-controller/doc.html
 
 ## SUPPORT my projects
-my work is *free*, however if you want to *support* my projects, and especially if you like them, you can *contribute* by making a small *donation*.
+my work is *free*, however if you want to *support* my projects, and especially if you like them, you can *contribute* by making a small *donation* whit this button:
+
 <a href="https://www.buymeacoffee.com/brockdev" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
