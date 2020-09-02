@@ -3,7 +3,7 @@ Control your Xiaomi/Yeelight smartbulb from your pc
 
 ## DOWNLOAD section
 To download only the installation file from this repository, follow this link: https://github.com/BrockDeveloper/y2e-Yeelight-controller/blob/master/y2e-installer.exe
-and click on *downlaod*.
+and click on the *downlaod* button.
 
 ## What you can do?
 * Turn the device on and off
