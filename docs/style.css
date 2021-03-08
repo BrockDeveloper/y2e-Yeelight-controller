@@ -1,250 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    vertical-align: baseline;
-    font-family: 'Comfortaa', cursive;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* CSS START */
-
-nav {
-    background-color: #2B303A;
-    padding: 30px;
-}
-
-.logo {
-    display: inline-block;
-}
-
-nav ul {
-    float: right;
-    padding-right: 50px;
-}
-
-nav ul li {
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    display: inline-block;
-    margin: 0 20px;
-    padding-top: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-nav a:hover {
-    border-bottom: 2px solid #fcd94d;
-    color: #fcd94d;
-}
-
-.checkbtn {
-    color: #fff;
-    font-size: 20px;
-    float: right;
-    margin-top: 10px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .checkbtn {
-        display: block;
-    }
-
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #fcd94d;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        padding-top: 60px;
-        top: 90px;
-        right: -100%;
-        transition: all .5s;  
-    }
-
-    nav ul li {
-        display: block;
-        line-height: 120px;
-        font-size: 40px;
-    }
-
-    #check:checked ~ ul{
-        right: 0;
-    }
-}
-
-/* MENU END HERE */
-
-button
+/*navigation section*/
+.nav-item
 {
-	border: none;
-	padding: 20px;
-	text-align: center;
-	display: inline-block;
-	margin: 4px 2px;
-	border-radius: 30px;
-	font-size: x-large;
-	font-weight: 600;
+    padding-left: 20px;
 }
 
-button:focus {outline:0;}
-
-#intro{
+/*presentation section*/
+#presentation 
+{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+    position: relative;
     background-color: #9cd8ff;
-    color: #2B303A;
-    height: 55vh;
-    text-align: center;
+    color: #212529;
 }
 
-#intro h2{
+#presentation h1
+{
     font-size: 50px;
 }
 
-#preset{
-    font-size: 50px;
-    background-color: #2B303A;
-    color: #fcd94d;
-    text-align: center;
-    height: 30vh;
+#presentation h1 .logo
+{
+    text-shadow: 2px 2px #fcd94d;
 }
 
-.presentation{
-    font-size: 35px;
-    background-color: #2B303A;
+#presentation .btn-get-started 
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #212529;
+}
+  
+#presentation  .btn-get-started:hover 
+{
+    background: #fcd94d;
+    color: #212529;
+}
+
+/*what you can do section*/
+#cando
+{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    position: relative;
+    background-color: #212529;
     color: #fcd94d;
-    text-align: center;
+}
+#cando h1
+{
+    font-size: 40px;
+}
+
+#card
+{
+    width: 100%;
     height: 40vh;
+    position: relative;
+    position: relative;
+    background-color: #212529;
+    color: #fcd94d;
 }
 
-#downloadSection{
-    font-size: 50px;
-    font-weight: 900;
+#screenshot
+{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    position: relative;
     background-color: #9cd8ff;
-    color: #2B303A;
-    text-align: center;
+    color: #212529;
+}
+#screenshot h1
+{
+    font-size: 40px;
+}
+
+#carouselExampleControls
+{
+    background-color: #9cd8ff;
+}
+
+
+#code
+{
+    width: 100%;
     height: 60vh;
-}
-
-#downloadSection button{
-    background-color:#fcd94d ;
-    color: #2B303A;
-}
-
-#downloadSection button:hover{
-    background-color:#2B303A ;
+    position: relative;
+    background-size: cover;
+    position: relative;
+    background-color: #212529;
     color: #9cd8ff;
 }
-
-#manualSection{
-    font-size: 50px;
-    font-weight: 900;
-    background-color: #2B303A;
-    color: #9cd8ff;
-    text-align: center;
-    height: 60vh;
+#code .btn-get-started 
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 14px 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #212529;
+    background: #9cd8ff;
+}
+  
+#code .btn-get-started:hover 
+{
+    background: #fcd94d;
+    color: #212529;
 }
 
-#manualSection button{
-    background-color:#fcd94d ;
-    color: #2B303A;
+#code .highlight
+{
+    text-shadow: 1px 1px #fcd94d;
 }
 
-#manualSection button:hover{
-    background-color:#9cd8ff ;
-    color: #2B303A;
-}
-
-footer{
-    background-color: #9cd8ff;
-    color: #2B303A;
-    height: 10vh;
-    text-align: center;
-}
-
-@media (max-width: 768px){    
-    #intro{
-        background-color: #9cd8ff;
-        color: #2B303A;
-        height: 50vh;
-        text-align: center;
-    }
-
-    #intro h2{
-        font-size: 27px;
-    }
-
-    #intro img{
-        height: 200px;
-        width: 200px;
-    }
-
-    #preset{
-        font-size: 35px;
-        background-color: #2B303A;
-        color: #fcd94d;
-        text-align: center;
-        height: 20vh;
-    }
-
-    footer{
-        background-color: #9cd8ff;
-        color: #2B303A;
-        height: 10vh;
-        text-align: center;
-        font-size: 10px;
-    }
+#foot
+{
+    background-color: #212529;
+    color: #576476;
 }
