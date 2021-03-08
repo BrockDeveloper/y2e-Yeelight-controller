@@ -1,97 +1,196 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>y2e</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <title>y2e official site</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <img src="img/logoY2e.png" height="40" width="71">
-
-        <ul>
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#preset">What you can do</a></li>
-            <li><a href="#downloadSection">Download</a></li>
-            <li><a href="#manualSection">documentation</a></li>
-            <li><a href="https://brockdeveloper.github.io">About BrockDev</a></li>
-        </ul>
+    <!--navigation section-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" width="80.5" height="45.25">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cando">What you can do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doc.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#code">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#code">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div id="intro">
-        <img src="img/mainLogo.png" height="270" width="270">
-        <h2>control your yeelight smart bulb* with your PC</h2>
-    </div>
+    <!--presentation section-->
+    <section id="presentation" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1><span class="logo">y2e</span> yeelight controller</h1>
+                    <br>
+                    <h3>control your yeelight smart bulb* with your PC</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="https://github.com/BrockDeveloper/y2e-Yeelight-controller/releases/download/1.0.1/y2e.installer.exe" class="btn-get-started scrollto">Download</a>
+            </div>
+        </div>
+    </section>
 
-    <div id="preset">
-        <br>
-        <h1>What you can do?</h1>
-    </div>
-
-    <div class="presentation">
-        <img src="img/power.png" height="70" width="70">
-        <br><br>
-        <h1>turn the device on and off</h1>
-    </div>
-    <div class="presentation">
-        <img src="img/bright.png" height="70" width="70">
-        <br><br>
-        <h1>change the brightness</h1>
-    </div>
-    <div class="presentation">
-        <img src="img/color.png" height="70" width="70">
-        <br><br>
-        <h1>choose from the available colors</h1>
-    </div>
-    <div class="presentation">
-        <img src="img/scene.png" height="70" width="70">
-        <br><br>
-        <h1>or choose a scene already made for you</h1>
-    </div>
-
-    <div id="downloadSection">
-        <br><br>
-        <h1>get it for free on GitHub</h1>
-        <br>
-        <a href="https://github.com/BrockDeveloper/y2e-Yeelight-controller/blob/master/y2e-installer.exe"><button type="button">download</button></a>
-    </div>
     
-    <div id="downloadSection">
-        <br><br>
-        <h1>see the source code on GitHub</h1>
-        <br>
-        <a href="https://github.com/BrockDeveloper/y2e-Yeelight-controller"><button type="button">sources</button></a>
-    </div>
 
-    <div id="manualSection">
-        <br><br>
-        <h1>read the online guide</h1>
-        <br>
-        <a href="doc.html"><button type="button">open it</button></a>
-    </div>
+    <!--what you can do section-->
+    <section id="cando" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1>What you can do?</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="card" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <img src="img/power.png" width="80" height="80">
+                    <br><br><br>
+                    <h2>Turn the device on and off</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="card" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <img src="img/bright.png" width="80" height="80">
+                    <br><br><br>
+                    <h2>Change the brightness</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="card" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <img src="img/color.png" width="80" height="80">
+                    <br><br><br>
+                    <h2>Choose from the available colors</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="card" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <img src="img/scene.png" width="80" height="80">
+                    <br><br><br>
+                    <h2>Or choose a scene already made for you</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <br>
-        <p>*y2e is an unoffical software by Brock developer, the Yeelight brand does not belong to me but to their respective owners</p>
-        <br>
-        <p>&copy;2020, y2e by Brock Developer</p>
-    </footer>
+    <!--software screenshot carousel section-->
+    <section id="screenshot" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1>Screenshot</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="img"><img class="d-block img-fluid" src="img/one.png" alt="First slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="img/two.png" alt="Second slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="img/three.png" alt="Third slide"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"><img class="d-block img-fluid" src="img/four.png" alt="Third slide"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+
+
+      <!--Download and github repository-->
+      <section id="code" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1><span class="highlight">Download</span> or view the source code on <span class="highlight">GitHub</span></h1>
+                    <br>
+                    <h3>It's free</h3>
+                    <br>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="https://github.com/BrockDeveloper/y2e-Yeelight-controller/releases/download/1.0.1/y2e.installer.exe" class="btn-get-started scrollto">Download</a>
+                &emsp;
+                <a href="https://github.com/BrockDeveloper/y2e-Yeelight-controller" class="btn-get-started scrollto">Github</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer section-->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" id="foot">
+            <p>*y2e is an unoffical software by Brock DEV, the Yeelight brand does not belong to me but to their respective owners</p>
+          </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" id="foot">
+          © 2020 Copyright:
+          <a class="text-white" href="https://brockdev.it/">brockdev.it</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    
 
 </body>
-
 </html>
